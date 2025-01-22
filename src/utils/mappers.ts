@@ -7,7 +7,7 @@ export function reduceByKey<T, TKey extends keyof T>(
 ): T[TKey] {
   return data.reduce(
     (prev, current) => ({ ...prev, ...current[key] }),
-    // eslint-disable-next-line @typescript-eslint/prefer-reduce-type-parameter, @typescript-eslint/consistent-type-assertions
+    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
     {} as T[TKey]
   )
 }
