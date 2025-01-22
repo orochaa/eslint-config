@@ -1,5 +1,11 @@
 # eslint-plugin-mist3rbru
 
+## 0.6.4
+
+### Patch Changes
+
+- 5db1c83: chore: bump dependencies
+
 ## 0.6.3
 
 ### Patch Changes
