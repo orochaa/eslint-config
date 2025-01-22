@@ -358,6 +358,9 @@ export const typescriptPlugin = definePlugin({
 
     // https://typescript-eslint.io/rules/no-unsafe-type-assertion
     '@typescript-eslint/no-unsafe-type-assertion': 'off',
+
+    // https://typescript-eslint.io/rules/no-misused-spread
+    '@typescript-eslint/no-misused-spread': 'off',
   },
   testRules: {
     // https://typescript-eslint.io/rules/no-explicit-any

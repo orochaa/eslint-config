@@ -97,20 +97,6 @@ declare module 'eslint-plugin-import' {
   export = plugin
 }
 
-declare module 'eslint-plugin-no-secrets' {
-  import type { ESLint, Linter } from 'eslint'
-
-  declare const plugin: ESLint.Plugin & {
-    configs: {
-      recommended: {
-        rules: Linter.RulesRecord
-      }
-    }
-  }
-
-  export default plugin
-}
-
 declare module 'eslint-plugin-promise' {
   import type { ESLint, Linter } from 'eslint'
 

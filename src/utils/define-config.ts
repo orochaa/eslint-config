@@ -41,14 +41,26 @@ export function defineConfig<TPluginName extends string>(
       ...reduceByKey(config.plugins, 'settings'),
       ...config.settings,
     },
-    plugins: Object.fromEntries(
-      config.plugins
-        .filter(plugin => !!plugin.name)
-        .map(plugin => [plugin.name, plugin.source])
-    ) as Record<TPluginName, ESLint.Plugin>,
+    plugins: mapPlugins(config.plugins),
     rules: {
       ...reduceByKey(config.plugins, config.extendPlugins),
       ...config.rules,
     },
   }
+}
+
+function mapPlugins<TPluginName extends string>(
+  plugins: EslintPlugin<TPluginName>[]
+): Record<TPluginName, ESLint.Plugin> {
+  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+  const result = {} as Record<TPluginName, ESLint.Plugin>
+
+  for (const { name, source } of plugins) {
+    if (!name) {
+      continue
+    }
+    result[name] = source
+  }
+
+  return result
 }
