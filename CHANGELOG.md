@@ -1,5 +1,11 @@
 # eslint-plugin-mist3rbru
 
+## 0.6.7
+
+### Patch Changes
+
+- 427602b: refactor: turn off @typescript-eslint/no-unnecessary-type-conversion only for react
+
 ## 0.6.6
 
 ### Patch Changes
