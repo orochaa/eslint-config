@@ -363,7 +363,9 @@ export const typescriptPlugin = definePlugin({
     '@typescript-eslint/no-misused-spread': 'off',
 
     // https://typescript-eslint.io/rules/no-unnecessary-type-conversion
-    '@typescript-eslint/no-unnecessary-type-conversion': 'error',
+    // Turned `off` in favor of react/jsx-no-leaked-render
+    // Issue: https://github.com/jsx-eslint/eslint-plugin-react/issues/3908
+    '@typescript-eslint/no-unnecessary-type-conversion': 'off',
   },
   testRules: {
     // https://typescript-eslint.io/rules/no-explicit-any
