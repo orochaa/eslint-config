@@ -1,5 +1,11 @@
 # eslint-plugin-mist3rbru
 
+## 0.6.6
+
+### Patch Changes
+
+- 4f201d8: fix: use react/jsx-no-leaked-render over @typescript-eslint/no-unnecessary-type-conversion
+
 ## 0.6.5
 
 ### Patch Changes
