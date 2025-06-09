@@ -45,5 +45,10 @@ export const reactConfig = defineConfig({
 
     // https://typescript-eslint.io/rules/method-signature-style
     '@typescript-eslint/method-signature-style': ['error', 'property'],
+
+    // Turned `off` in favor of react/jsx-no-leaked-render
+    // Issue: https://github.com/jsx-eslint/eslint-plugin-react/issues/3908
+    // https://typescript-eslint.io/rules/no-unnecessary-type-conversion
+    '@typescript-eslint/no-unnecessary-type-conversion': 'off',
   },
 })
