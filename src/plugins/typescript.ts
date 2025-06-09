@@ -361,6 +361,9 @@ export const typescriptPlugin = definePlugin({
 
     // https://typescript-eslint.io/rules/no-misused-spread
     '@typescript-eslint/no-misused-spread': 'off',
+
+    // https://typescript-eslint.io/rules/no-unnecessary-type-conversion
+    '@typescript-eslint/no-unnecessary-type-conversion': 'error',
   },
   testRules: {
     // https://typescript-eslint.io/rules/no-explicit-any
